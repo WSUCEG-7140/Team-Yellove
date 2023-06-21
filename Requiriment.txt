@@ -1,1 +1,0 @@
-pip install Django=4.2.2
