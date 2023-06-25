@@ -1,0 +1,273 @@
+[
+    {
+      "model": "app.item",
+      "pk": 1,
+      "fields": {
+        "name": "Bruschetta",
+        "category": 1,
+        "description": "Toasted bread topped with fresh tomatoes, basil, and garlic.",
+        "price": "8.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 2,
+      "fields": {
+        "name": "Caprese Salad",
+        "category": 1,
+        "description": "Tomatoes, fresh mozzarella, and basil drizzled with balsamic glaze.",
+        "price": "9.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 3,
+      "fields": {
+        "name": "Garlic Shrimp",
+        "category": 1,
+        "description": "Sautéed shrimp in garlic butter, served with a side of crusty bread.",
+        "price": "12.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 4,
+      "fields": {
+        "name": "Greek Salad",
+        "category": 2,
+        "description": "Crisp lettuce, tomatoes, cucumbers, feta cheese, and olives with Greek dressing.",
+        "price": "7.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 5,
+      "fields": {
+        "name": "Caesar Salad",
+        "category": 2,
+        "description": "Fresh romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.",
+        "price": "9.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 6,
+      "fields": {
+        "name": "Spinach Salad",
+        "category": 2,
+        "description": "Baby spinach leaves with bacon, mushrooms, and a warm bacon vinaigrette.",
+        "price": "8.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 7,
+      "fields": {
+        "name": "Chicken Parmesan",
+        "category": 3,
+        "description": "Breaded chicken breast topped with marinara sauce and melted mozzarella.",
+        "price": "14.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 8,
+      "fields": {
+        "name": "Beef Tenderloin",
+        "category": 3,
+        "description": "Grilled beef tenderloin served with a red wine reduction sauce.",
+        "price": "19.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 9,
+      "fields": {
+        "name": "Eggplant Parmesan",
+        "category": 3,
+        "description": "Breaded eggplant slices topped with marinara sauce and melted mozzarella.",
+        "price": "12.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 10,
+      "fields": {
+        "name": "Chocolate Brownie",
+        "category": 4,
+        "description": "Decadent chocolate brownie served warm with vanilla ice cream.",
+        "price": "6.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 11,
+      "fields": {
+        "name": "Cheesecake",
+        "category": 4,
+        "description": "Creamy New York-style cheesecake with a graham cracker crust.",
+        "price": "8.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 12,
+      "fields": {
+        "name": "Tiramisu",
+        "category": 4,
+        "description": "Layered dessert with ladyfingers, coffee, mascarpone cheese, and cocoa.",
+        "price": "7.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 13,
+      "fields": {
+        "name": "Iced Coffee",
+        "category": 5,
+        "description": "Chilled coffee served over ice, with a touch of cream and sugar.",
+        "price": "4.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 14,
+      "fields": {
+        "name": "Fresh Lemonade",
+        "category": 5,
+        "description": "Refreshing lemonade made with freshly squeezed lemons and a hint of sweetness.",
+        "price": "3.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 15,
+      "fields": {
+        "name": "Mojito",
+        "category": 5,
+        "description": "Refreshing cocktail made with rum, lime juice, mint, and soda water.",
+        "price": "6.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 16,
+      "fields": {
+        "name": "Loaded Nachos",
+        "category": 6,
+        "description": "Crispy tortilla chips topped with seasoned ground beef, melted cheese, salsa, and guacamole.",
+        "price": "12.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 17,
+      "fields": {
+        "name": "Chicken Wings",
+        "category": 6,
+        "description": "Spicy chicken wings served with celery sticks and blue cheese dressing.",
+        "price": "10.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 18,
+      "fields": {
+        "name": "Stuffed Jalapenos",
+        "category": 6,
+        "description": "Jalapeno peppers stuffed with cream cheese and wrapped in bacon.",
+        "price": "8.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 19,
+      "fields": {
+        "name": "Tomato Soup",
+        "category": 7,
+        "description": "Homemade tomato soup with fresh tomatoes, herbs, and cream.",
+        "price": "5.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 20,
+      "fields": {
+        "name": "Chicken Noodle Soup",
+        "category": 7,
+        "description": "Classic chicken noodle soup with tender chicken, vegetables, and egg noodles.",
+        "price": "6.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 21,
+      "fields": {
+        "name": "Butternut Squash Soup",
+        "category": 7,
+        "description": "Creamy soup made with roasted butternut squash, spices, and a touch of cream.",
+        "price": "7.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 22,
+      "fields": {
+        "name": "Spaghetti Bolognese",
+        "category": 8,
+        "description": "Pasta with meat sauce made with ground beef, tomatoes, and herbs.",
+        "price": "11.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 23,
+      "fields": {
+        "name": "Fettuccine Alfredo",
+        "category": 8,
+        "description": "Creamy pasta dish with Parmesan cheese and butter sauce.",
+        "price": "10.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 24,
+      "fields": {
+        "name": "Penne Arrabbiata",
+        "category": 8,
+        "description": "Spicy pasta dish with penne, tomatoes, garlic, and chili flakes.",
+        "price": "9.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 25,
+      "fields": {
+        "name": "Grilled Salmon",
+        "category": 9,
+        "description": "Freshly grilled salmon fillet served with lemon butter sauce.",
+        "price": "15.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 26,
+      "fields": {
+        "name": "Shrimp Scampi",
+        "category": 9,
+        "description": "Sautéed shrimp in a garlic butter and white wine sauce, served over pasta.",
+        "price": "16.99"
+      }
+    },
+    {
+      "model": "app.item",
+      "pk": 27,
+      "fields": {
+        "name": "Lobster Tail",
+        "category": 9,
+        "description": "Grilled lobster tail served with melted butter and lemon wedges.",
+        "price": "29.99"
+      }
+    }
+  ]
+  
