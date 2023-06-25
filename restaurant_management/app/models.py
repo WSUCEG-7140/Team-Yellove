@@ -20,3 +20,27 @@ class Ingredient(models.Model):
 class Item_Ingredients(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
+
+# Models for Orders
+
+class Order(models.Model):
+    STATUS_CHOICES = (
+        ('PENDING', 'Pending'),
+        ('PROCESSING', 'Processing'),
+        ('COMPLETED', 'Completed'),
+        ('CANCELLED', 'Cancelled'),
+    )
+    
+    unique_id = models.AutoField(primary_key=True)
+    user = models.CharField(max_length=20, null=False)
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='PENDING')
+    items = models.ManyToManyField(Item, through='OrderItem')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
+class OrderItem(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField(default=1)
+    
