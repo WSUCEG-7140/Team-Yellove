@@ -1,0 +1,74 @@
+[
+  {
+    "model": "app.category",
+    "pk": 1,
+    "fields": {
+      "name": "Appetizers",
+      "description": "Delicious starters to stimulate your appetite."
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 2,
+    "fields": {
+      "name": "Salads",
+      "description": "Fresh and healthy salad options for a light meal."
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 3,
+    "fields": {
+      "name": "Main Courses",
+      "description": "Satisfying and flavorful main course dishes for your main course."
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 4,
+    "fields": {
+      "name": "Desserts",
+      "description": "Indulgent and sweet treats to end your meal on a delightful note."
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 5,
+    "fields": {
+      "name": "Beverages",
+      "description": "Refreshing drinks to quench your thirst and complement your meal."
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 6,
+    "fields": {
+      "name": "Snacks",
+      "description": "Quick and tasty snacks to satisfy your cravings between meals."
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 7,
+    "fields": {
+      "name": "Soups",
+      "description": "Comforting and flavorful soups to warm you up."
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 8,
+    "fields": {
+      "name": "Pasta",
+      "description": "Delicious pasta dishes made with fresh ingredients and flavorful sauces."
+    }
+  },
+  {
+    "model": "app.category",
+    "pk": 9,
+    "fields": {
+      "name": "Seafood",
+      "description": "Delectable seafood options from the sea to your plate."
+    }
+  }
+]

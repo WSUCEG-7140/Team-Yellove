@@ -1,0 +1,650 @@
+[
+    {
+        "model": "app.item_ingredients",
+        "pk": 1,
+        "fields": {
+            "item": 1,
+            "ingredient": 1
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 2,
+        "fields": {
+            "item": 1,
+            "ingredient": 2
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 3,
+        "fields": {
+            "item": 1,
+            "ingredient": 3
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 4,
+        "fields": {
+            "item": 2,
+            "ingredient": 4
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 5,
+        "fields": {
+            "item": 2,
+            "ingredient": 5
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 6,
+        "fields": {
+            "item": 2,
+            "ingredient": 6
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 7,
+        "fields": {
+            "item": 3,
+            "ingredient": 7
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 8,
+        "fields": {
+            "item": 3,
+            "ingredient": 8
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 9,
+        "fields": {
+            "item": 3,
+            "ingredient": 9
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 10,
+        "fields": {
+            "item": 4,
+            "ingredient": 10
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 11,
+        "fields": {
+            "item": 4,
+            "ingredient": 11
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 12,
+        "fields": {
+            "item": 4,
+            "ingredient": 12
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 13,
+        "fields": {
+            "item": 5,
+            "ingredient": 13
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 14,
+        "fields": {
+            "item": 5,
+            "ingredient": 14
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 15,
+        "fields": {
+            "item": 5,
+            "ingredient": 15
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 16,
+        "fields": {
+            "item": 6,
+            "ingredient": 16
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 17,
+        "fields": {
+            "item": 6,
+            "ingredient": 17
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 18,
+        "fields": {
+            "item": 6,
+            "ingredient": 18
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 19,
+        "fields": {
+            "item": 7,
+            "ingredient": 19
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 20,
+        "fields": {
+            "item": 7,
+            "ingredient": 20
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 21,
+        "fields": {
+            "item": 7,
+            "ingredient": 21
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 22,
+        "fields": {
+            "item": 8,
+            "ingredient": 22
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 23,
+        "fields": {
+            "item": 8,
+            "ingredient": 23
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 24,
+        "fields": {
+            "item": 8,
+            "ingredient": 24
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 25,
+        "fields": {
+            "item": 9,
+            "ingredient": 25
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 26,
+        "fields": {
+            "item": 9,
+            "ingredient": 26
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 27,
+        "fields": {
+            "item": 9,
+            "ingredient": 27
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 28,
+        "fields": {
+            "item": 10,
+            "ingredient": 28
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 29,
+        "fields": {
+            "item": 10,
+            "ingredient": 29
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 30,
+        "fields": {
+            "item": 10,
+            "ingredient": 30
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 31,
+        "fields": {
+            "item": 11,
+            "ingredient": 31
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 32,
+        "fields": {
+            "item": 11,
+            "ingredient": 32
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 33,
+        "fields": {
+            "item": 11,
+            "ingredient": 33
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 34,
+        "fields": {
+            "item": 12,
+            "ingredient": 34
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 35,
+        "fields": {
+            "item": 12,
+            "ingredient": 35
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 36,
+        "fields": {
+            "item": 12,
+            "ingredient": 36
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 37,
+        "fields": {
+            "item": 13,
+            "ingredient": 37
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 38,
+        "fields": {
+            "item": 13,
+            "ingredient": 38
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 39,
+        "fields": {
+            "item": 13,
+            "ingredient": 39
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 40,
+        "fields": {
+            "item": 14,
+            "ingredient": 40
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 41,
+        "fields": {
+            "item": 14,
+            "ingredient": 41
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 42,
+        "fields": {
+            "item": 14,
+            "ingredient": 42
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 43,
+        "fields": {
+            "item": 15,
+            "ingredient": 43
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 44,
+        "fields": {
+            "item": 15,
+            "ingredient": 44
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 45,
+        "fields": {
+            "item": 15,
+            "ingredient": 45
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 46,
+        "fields": {
+            "item": 16,
+            "ingredient": 46
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 47,
+        "fields": {
+            "item": 16,
+            "ingredient": 47
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 48,
+        "fields": {
+            "item": 16,
+            "ingredient": 48
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 49,
+        "fields": {
+            "item": 17,
+            "ingredient": 49
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 50,
+        "fields": {
+            "item": 17,
+            "ingredient": 50
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 51,
+        "fields": {
+            "item": 17,
+            "ingredient": 51
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 52,
+        "fields": {
+            "item": 18,
+            "ingredient": 52
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 53,
+        "fields": {
+            "item": 18,
+            "ingredient": 53
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 54,
+        "fields": {
+            "item": 18,
+            "ingredient": 54
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 55,
+        "fields": {
+            "item": 19,
+            "ingredient": 55
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 56,
+        "fields": {
+            "item": 19,
+            "ingredient": 56
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 57,
+        "fields": {
+            "item": 19,
+            "ingredient": 57
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 58,
+        "fields": {
+            "item": 20,
+            "ingredient": 58
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 59,
+        "fields": {
+            "item": 20,
+            "ingredient": 59
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 60,
+        "fields": {
+            "item": 20,
+            "ingredient": 60
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 61,
+        "fields": {
+            "item": 21,
+            "ingredient": 61
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 62,
+        "fields": {
+            "item": 21,
+            "ingredient": 62
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 63,
+        "fields": {
+            "item": 21,
+            "ingredient": 63
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 64,
+        "fields": {
+            "item": 22,
+            "ingredient": 64
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 65,
+        "fields": {
+            "item": 22,
+            "ingredient": 65
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 66,
+        "fields": {
+            "item": 22,
+            "ingredient": 66
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 67,
+        "fields": {
+            "item": 23,
+            "ingredient": 67
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 68,
+        "fields": {
+            "item": 23,
+            "ingredient": 68
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 69,
+        "fields": {
+            "item": 23,
+            "ingredient": 69
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 70,
+        "fields": {
+            "item": 24,
+            "ingredient": 70
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 71,
+        "fields": {
+            "item": 24,
+            "ingredient": 71
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 72,
+        "fields": {
+            "item": 24,
+            "ingredient": 72
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 73,
+        "fields": {
+            "item": 25,
+            "ingredient": 73
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 74,
+        "fields": {
+            "item": 25,
+            "ingredient": 74
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 75,
+        "fields": {
+            "item": 25,
+            "ingredient": 75
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 76,
+        "fields": {
+            "item": 26,
+            "ingredient": 76
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 77,
+        "fields": {
+            "item": 26,
+            "ingredient": 77
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 78,
+        "fields": {
+            "item": 26,
+            "ingredient": 78
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 79,
+        "fields": {
+            "item": 27,
+            "ingredient": 1
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 80,
+        "fields": {
+            "item": 27,
+            "ingredient": 2
+        }
+    },
+    {
+        "model": "app.item_ingredients",
+        "pk": 81,
+        "fields": {
+            "item": 27,
+            "ingredient": 3
+        }
+    }
+]
