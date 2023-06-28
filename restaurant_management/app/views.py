@@ -1,11 +1,11 @@
 from rest_framework import generics
 from .models import Item, Order
-from .serializers import OrderItemSerializer, OrderSerializer
+from .serializers import OrderItemSerializer, OrderSerializer, ItemSerializer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 class ItemListView(generics.ListAPIView):
-    serializer_class = OrderItemSerializer
+    serializer_class = ItemSerializer
 
     def get_queryset(self):
         queryset = Item.objects.all()
