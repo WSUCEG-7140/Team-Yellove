@@ -1,8 +1,10 @@
 from rest_framework import generics
 from .models import Item, Order
-from .serializers import OrderItemSerializer, OrderSerializer, ItemSerializer
+from .serializers import ItemSerializer, CreateOrderSerializer, ViewOrderSerializer
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework import viewsets
+
 
 class ItemListView(generics.ListAPIView):
     serializer_class = ItemSerializer
@@ -14,20 +16,30 @@ class ItemListView(generics.ListAPIView):
             queryset = queryset.filter(category_id=category_id)
         return queryset
 
-class OrderListAPIView(generics.ListAPIView):
-    serializer_class = OrderSerializer
+class OrderCreateAPIView(APIView):
+    def post(self, request, format=None):
+        serializer = CreateOrderSerializer(data=request.data)
+        if serializer.is_valid():
+            order = serializer.save()
 
-    def get_queryset(self):
-        status_param = self.request.query_params.get('status', None)
-        queryset = Order.objects.all()
+            response_data = {
+                'order_id' : order.unique_id,
+                'user': order.user,
+                'status': order.status,
+                'items': []
+            }
 
-        if status_param:
-            try:
-                queryset = queryset.filter(status=status_param)
-            except ValueError:
-                return Response(
-                    {"error": "Invalid status parameter."},
-                    status=status.HTTP_400_BAD_REQUEST
-                )
+            for order_item in order.orderitem_set.all():
+                item_data = {
+                    'name': order_item.item.name,
+                    'quantity': order_item.quantity
+                }
+                response_data['items'].append(item_data)
 
-        return queryset
+            return Response(response_data, status=201)
+        return Response(serializer.errors, status=400)
+
+
+class ListOrdersAPIView(generics.ListAPIView):
+    queryset = Order.objects.all()
+    serializer_class = ViewOrderSerializer
