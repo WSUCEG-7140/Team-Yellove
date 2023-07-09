@@ -4,7 +4,7 @@ from .serializers import ItemSerializer, CreateOrderSerializer, ViewOrderSeriali
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import viewsets
-
+from django.db.models import Q
 
 class ItemListView(generics.ListAPIView):
     serializer_class = ItemSerializer
@@ -14,7 +14,13 @@ class ItemListView(generics.ListAPIView):
         category_id = self.kwargs.get('category_id')
         if category_id:
             queryset = queryset.filter(category_id=category_id)
+        
+        search_query = self.request.GET.get('search', None)
+        if search_query:
+            queryset = queryset.filter(Q(name__icontains=search_query))
+        
         return queryset
+
 
 class OrderCreateAPIView(APIView):
     def post(self, request, format=None):
