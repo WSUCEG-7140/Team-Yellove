@@ -6,6 +6,30 @@ class CreateItemSerializer(serializers.Serializer):
     unique_id = serializers.IntegerField()
     quantity = serializers.IntegerField()
 
+
+class UpdateItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderItem
+        fields = ['item', 'quantity']
+
+    def update(self, instance, validated_data):
+        instance.quantity = validated_data.get('quantity', instance.quantity)
+        instance.save()
+        return instance
+
+    def to_internal_value(self, data):
+        item_id = data.get('item_id')
+        try:
+            item = Item.objects.get(unique_id=item_id)
+        except Item.DoesNotExist:
+            raise serializers.ValidationError(f"Item with unique_id '{item_id}' does not exist.")
+        return {
+            'item': item,
+            'quantity': data.get('quantity')
+        }
+
+
+
 class CreateOrderSerializer(serializers.Serializer):
     user = serializers.CharField()
     items = CreateItemSerializer(many=True)
