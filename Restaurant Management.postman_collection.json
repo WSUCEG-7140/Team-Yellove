@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "06caea57-ed0c-46e5-971b-04a0b71296cb",
+		"name": "Restaurant Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22217963"
+	},
+	"item": [
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "List Orders",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": \"John Doe\",\r\n  \"items\": [\r\n    {\r\n      \"unique_id\": 1,\r\n      \"quantity\": 3\r\n    },\r\n    {\r\n      \"unique_id\": 2,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/restaurant/api/orders/create/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu",
+			"item": []
+		}
+	]
+}
