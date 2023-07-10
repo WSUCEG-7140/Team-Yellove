@@ -3,7 +3,7 @@ from .views import ItemListView
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import OrderCreateAPIView, ListOrdersAPIView
+from .views import OrderCreateAPIView, ListOrdersAPIView, add_or_update_order_item
 
 # router = DefaultRouter()
 # router.register(r'get_orders', OrderViewSet)
@@ -16,4 +16,6 @@ urlpatterns = [
     path('items/category/<int:category_id>/', ItemListView.as_view(), name='item-list-filtered'),
     path('orders/create/', OrderCreateAPIView.as_view(), name='order-create'),
     path('orders/', ListOrdersAPIView.as_view(), name='list_orders'),
+    # path('orders/<int:order_id>/items/', UpdateOrderItemsAPIView.as_view(), name='update_order_items'),
+    path('orders/<int:order_id>/items/', add_or_update_order_item, name='add_or_update_order_item')
 ]

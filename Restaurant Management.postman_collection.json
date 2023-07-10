@@ -1,8 +1,8 @@
 {
 	"info": {
-		"_postman_id": "06caea57-ed0c-46e5-971b-04a0b71296cb",
+		"_postman_id": "86ec73da-9da4-4aea-a484-9719ce8745aa",
 		"name": "Restaurant Management",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "22217963"
 	},
 	"item": [
@@ -13,7 +13,21 @@
 					"name": "List Orders",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/restaurant/api/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"api",
+								"orders",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -24,14 +38,52 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"user\": \"John Doe\",\r\n  \"items\": [\r\n    {\r\n      \"unique_id\": 1,\r\n      \"quantity\": 3\r\n    },\r\n    {\r\n      \"unique_id\": 2,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}",
+							"raw": "{\r\n  \"user\": \"Nisha\",\r\n  \"items\": [\r\n    {\r\n      \"unique_id\": 2,\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"unique_id\": 3,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "http://localhost:8000/restaurant/api/orders/create/"
+						"url": {
+							"raw": "http://localhost:8000/restaurant/api/orders/create/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"api",
+								"orders",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Items In Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/restaurant/api/orders/1/items/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"api",
+								"orders",
+								"1",
+								"items",
+								""
+							]
+						}
 					},
 					"response": []
 				}
@@ -39,7 +91,140 @@
 		},
 		{
 			"name": "Menu",
-			"item": []
+			"item": [
+				{
+					"name": "Get Item List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/restaurant/api/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"api",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Items Based On Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/restaurant/api/items/category/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"api",
+								"items",
+								"category",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Menu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/restaurant/api/items/?search=Salad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"api",
+								"items",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Salad"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user@example.com\",\n  \"first_name\": \"John\",\n  \"last_name\": \"Doe\",\n  \"password\": \"secretpassword\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/restaurant/authentication/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"authentication",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/restaurant/authentication/users/list/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"authentication",
+								"users",
+								"list",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
