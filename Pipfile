@@ -8,6 +8,10 @@ django = "*"
 mysql-connector-python = "*"
 djangorestframework = "*"
 django-filter = "*"
+djangorestframework-jwt = "*"
+djangorestframework-simplejwt = "*"
+djoser = "*"
+social-auth-app-django = "*"
 
 [dev-packages]
 
