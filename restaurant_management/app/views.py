@@ -5,7 +5,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import viewsets
 from django.db.models import Q
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view, permission_classes
 
+@permission_classes([IsAuthenticated])
 class ItemListView(generics.ListAPIView):
     serializer_class = ItemSerializer
 
@@ -21,7 +24,7 @@ class ItemListView(generics.ListAPIView):
         
         return queryset
 
-
+@permission_classes([IsAuthenticated])
 class OrderCreateAPIView(APIView):
     def post(self, request, format=None):
         serializer = CreateOrderSerializer(data=request.data)
@@ -45,12 +48,10 @@ class OrderCreateAPIView(APIView):
             return Response(response_data, status=201)
         return Response(serializer.errors, status=400)
 
-
+@permission_classes([IsAuthenticated])
 class ListOrdersAPIView(generics.ListAPIView):
     queryset = Order.objects.all()
     serializer_class = ViewOrderSerializer
-
-
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -58,6 +59,7 @@ from django.shortcuts import get_object_or_404
 from .models import Order, OrderItem, Item
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def add_or_update_order_item(request, order_id):
     try:
         order = Order.objects.get(unique_id=order_id)

@@ -13,7 +13,13 @@
 					"name": "List Orders",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5MDQ2MjIzLCJqdGkiOiI1NDZhYWVjYjg0NDM0YzQxOGZlYjRiOWYxMzlhNTU2NSIsInVzZXJfaWQiOjZ9.VhRwTijYZcYg_p9oH3ilCpAJldKaF5KOMp2eoTxt96U",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8000/restaurant/api/orders/",
 							"protocol": "http",
@@ -35,10 +41,16 @@
 					"name": "Create Order",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5MDQ1NzkyLCJqdGkiOiIyMmQ2NGE3MDcxOWM0MjJjODg3M2FiNmFkNzUwM2RlMCIsInVzZXJfaWQiOjZ9.umIOdF7kO0OogsIKZijQKLQJhZX2wYoqFFZUjCVJm8s",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"user\": \"Nisha\",\r\n  \"items\": [\r\n    {\r\n      \"unique_id\": 2,\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"unique_id\": 3,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+							"raw": "{\r\n  \"user\": \"Pravallika\",\r\n  \"items\": [\r\n    {\r\n      \"unique_id\": 18,\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"unique_id\": 15,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -67,9 +79,24 @@
 					"name": "Update Items In Order",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5MDQ2MjIzLCJqdGkiOiI1NDZhYWVjYjg0NDM0YzQxOGZlYjRiOWYxMzlhNTU2NSIsInVzZXJfaWQiOjZ9.VhRwTijYZcYg_p9oH3ilCpAJldKaF5KOMp2eoTxt96U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"items\" : [\n        {\n            \"item\" : 12,\n            \"quantity\" : 2\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:8000/restaurant/api/orders/1/items/",
+							"raw": "http://localhost:8000/restaurant/api/orders/12/items/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -79,7 +106,7 @@
 								"restaurant",
 								"api",
 								"orders",
-								"1",
+								"12",
 								"items",
 								""
 							]
@@ -96,7 +123,13 @@
 					"name": "Get Item List",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5MDQ1NzkyLCJqdGkiOiIyMmQ2NGE3MDcxOWM0MjJjODg3M2FiNmFkNzUwM2RlMCIsInVzZXJfaWQiOjZ9.umIOdF7kO0OogsIKZijQKLQJhZX2wYoqFFZUjCVJm8s",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8000/restaurant/api/items",
 							"protocol": "http",
@@ -117,7 +150,13 @@
 					"name": "Get Items Based On Category",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5MDQ1NzkyLCJqdGkiOiIyMmQ2NGE3MDcxOWM0MjJjODg3M2FiNmFkNzUwM2RlMCIsInVzZXJfaWQiOjZ9.umIOdF7kO0OogsIKZijQKLQJhZX2wYoqFFZUjCVJm8s",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8000/restaurant/api/items/category/1/",
 							"protocol": "http",
@@ -141,7 +180,13 @@
 					"name": "Search Menu",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5MDQ1NzkyLCJqdGkiOiIyMmQ2NGE3MDcxOWM0MjJjODg3M2FiNmFkNzUwM2RlMCIsInVzZXJfaWQiOjZ9.umIOdF7kO0OogsIKZijQKLQJhZX2wYoqFFZUjCVJm8s",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8000/restaurant/api/items/?search=Salad",
 							"protocol": "http",
@@ -177,7 +222,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"email\": \"user@example.com\",\n  \"first_name\": \"John\",\n  \"last_name\": \"Doe\",\n  \"password\": \"secretpassword\"\n}\n",
+							"raw": "{\n  \"email\": \"pravallika@example.com\",\n  \"first_name\": \"prava\",\n  \"last_name\": \"allika\",\n  \"password\": \"Create@123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -185,15 +230,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/restaurant/authentication/users/",
+							"raw": "http://localhost:8000/auth/users/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"restaurant",
-								"authentication",
+								"auth",
 								"users",
 								""
 							]
@@ -202,23 +246,67 @@
 					"response": []
 				},
 				{
-					"name": "Get Users",
+					"name": "Create JWT Token",
 					"request": {
-						"method": "GET",
-						"header": [],
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5MDEzMTI5LCJqdGkiOiI0MzhlOGFmYjEzOTg0YjdjOWVjZDMwZmQxZGE4ZjAxYyIsInVzZXJfaWQiOjR9.-AGyeu-n8C3gV1Mn-zp30w37xHHQNC67Z6FaFteitfI",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pravallika@example.com\",\n    \"password\": \"Create@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:8000/restaurant/authentication/users/list/",
+							"raw": "http://localhost:8000/auth/jwt/create",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"restaurant",
-								"authentication",
-								"users",
-								"list",
-								""
+								"auth",
+								"jwt",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh JWT Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4OTEzMTg5MiwianRpIjoiOWE4ZDAyMTcwYzc4NDgyMGJmMTRkYjVhOTgzOWU0MjUiLCJ1c2VyX2lkIjo2fQ.lXtds1ET_TGFPJOqCbcDjRIiuA_vh5yLvvAIB-nllyQ\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/jwt/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"jwt",
+								"refresh"
 							]
 						}
 					},
