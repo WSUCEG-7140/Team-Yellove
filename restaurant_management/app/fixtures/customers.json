@@ -1,0 +1,63 @@
+[
+    {
+      "model": "app.customer",
+      "pk": 1,
+      "fields": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "phone_number": "1234567890",
+        "address": "123 Main Street",
+        "date_of_birth": "1990-01-15"
+      }
+    },
+    {
+      "model": "app.customer",
+      "pk": 2,
+      "fields": {
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "jane.smith@example.com",
+        "phone_number": "9876543210",
+        "address": "456 Oak Avenue",
+        "date_of_birth": "1985-06-30"
+      }
+    },
+    {
+      "model": "app.customer",
+      "pk": 3,
+      "fields": {
+        "first_name": "Michael",
+        "last_name": "Johnson",
+        "email": "michael.johnson@example.com",
+        "phone_number": "5551234567",
+        "address": "789 Elm Road",
+        "date_of_birth": "1995-11-20"
+      }
+    },
+    {
+      "model": "app.customer",
+      "pk": 4,
+      "fields": {
+        "first_name": "Emily",
+        "last_name": "Brown",
+        "email": "emily.brown@example.com",
+        "phone_number": "1112223333",
+        "address": "987 Pine Lane",
+        "date_of_birth": "1992-09-05"
+      }
+    },
+    {
+      "model": "app.customer",
+      "pk": 5,
+      "fields": {
+        "first_name": "William",
+        "last_name": "Lee",
+        "email": "william.lee@example.com",
+        "phone_number": "4445556666",
+        "address": "222 Cedar Street",
+        "date_of_birth": "1988-03-12"
+      }
+    }
+  ]
+  
