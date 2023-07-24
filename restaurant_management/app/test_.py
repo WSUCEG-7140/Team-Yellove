@@ -2,10 +2,13 @@ import pytest
 from django.contrib.auth import get_user_model
 from rest_framework.test import APIClient
 from rest_framework import status
-from .models import Item, Category, Order, OrderItem
+from .models import Item, Category, Order, OrderItem, Customer
 from django.utils.timezone import make_aware
 import datetime
 import warnings
+import requests
+
+
 # Add this line to ignore the DeprecationWarning
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
@@ -226,3 +229,115 @@ class TestRestaurantOrders:
 
         # Assert the response data
         assert response.data == {"message": "Items added/updated successfully"}
+
+
+# Import the required pytest module for test marking
+import pytest
+
+# Mark this test class as using the Django database
+@pytest.mark.django_db
+class TestCustomerRegistration:
+
+    # Test to check if authenticated users can access the customers API
+    def test_orders_authenticated(self, authenticated_client):
+        url = '/restaurant/api/customers/'
+        response = authenticated_client.get(url)
+
+        # Assert that the response status code is 200 (OK)
+        assert response.status_code == status.HTTP_200_OK
+
+        # Assert that the response content type is JSON
+        assert response['content-type'] == 'application/json'
+
+    # Test to check if unauthenticated users are denied access to the customers API
+    def test_orders_unauthenticated(self):
+        client = APIClient()
+        url = '/restaurant/api/customers/'
+        response = client.get(url)
+
+        # Assert that the response status code is 401 (Unauthorized)
+        assert response.status_code == status.HTTP_401_UNAUTHORIZED
+
+        # Assert that the response content type is JSON
+        assert response['content-type'] == 'application/json'
+
+    # Test to create a new customer and check if the response is successful
+    def test_create_customer(self, authenticated_client):
+        url = "/restaurant/api/customers/"
+        data = {
+            "first_name": "John",
+            "last_name": "Doe",
+            "email": "john.doe@example.com",
+            "phone_number": "1234567890",
+            "address": "123 Main Street",
+            "date_of_birth": "1990-01-15",
+        }
+
+        # Make the POST request to the API endpoint
+        response = authenticated_client.post(url, data)
+
+        # Assert that the response status code is 201 (Created) for successful creation
+        assert response.status_code == 201
+
+        # Print the JSON response for debugging purposes
+        print(response.json())
+
+        # Assert that the customer object is created in the database with the correct details
+        assert response.json()['id'] == 1
+        assert response.json()['first_name'] == 'John'
+        assert response.json()['last_name'] == 'Doe'
+        assert response.json()['email'] == 'john.doe@example.com'
+    
+    # Test to get customers from the API and check the response
+    def test_get_customers(self, authenticated_client):
+        url = "/restaurant/api/customers/"
+
+        # Create a customer object in the database for testing
+        customer = Customer.objects.create(first_name ="John", last_name = "Doe", email = "john.doe@example.com", phone_number = "1234567890", address = "123 Main Street", date_of_birth = "1990-01-15")
+
+        # Make the GET request to the API endpoint
+        response = authenticated_client.get(url)
+
+        # Print the JSON response for debugging purposes
+        print(response.json())
+
+        # Assert that the response status code is 200 (OK)
+        assert response.status_code == 200
+
+        # Assert that the customer object retrieved from the API has the correct details
+        assert response.json()[0]['id'] == 1
+        assert response.json()[0]['first_name'] == 'John'
+        assert response.json()[0]['last_name'] == 'Doe'
+        assert response.json()[0]['email'] == 'john.doe@example.com'
+    
+    # Test to update a customer's details and check the response
+    def test_update_customers(self, authenticated_client):
+        url = "/restaurant/api/customers/1/"
+
+        # Create a customer object in the database for testing
+        customer = Customer.objects.create(first_name ="John", last_name = "Doe", email = "john.doe@example.com", phone_number = "1234567890", address = "123 Main Street", date_of_birth = "1990-01-15")
+
+        # Data containing updated details for the customer
+        data = {
+            "first_name": "John",
+            "last_name": "Reddy",
+            "email": "john.doe@google.com",
+            "phone_number": "1234567890",
+            "address": "123 Main Street",
+            "date_of_birth": "1990-01-15"
+        }
+
+        # Make the PUT request to the API endpoint
+        response = authenticated_client.put(url, data=data)
+
+        # Print the JSON response for debugging purposes
+        print(response.json())
+
+        # Assert that the response status code is 200 (OK) for a successful update
+        assert response.status_code == 200
+
+        # Assert that the customer object has been updated with the correct details in the response
+        assert response.json()['id'] == 1
+        assert response.json()['first_name'] == 'John'
+        assert response.json()['last_name'] == 'Reddy'
+        assert response.json()['email'] == 'john.doe@google.com'
