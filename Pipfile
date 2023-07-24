@@ -12,6 +12,7 @@ djangorestframework-jwt = "*"
 djangorestframework-simplejwt = "*"
 djoser = "*"
 social-auth-app-django = "*"
+tzdata = "*"
 
 [dev-packages]
 pytest = "*"
