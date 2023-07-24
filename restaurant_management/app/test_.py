@@ -12,10 +12,13 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 CustomUser = get_user_model()
 
 # Fixture to create an authenticated client with a user
+
+
 @pytest.fixture
 def authenticated_client():
     # Create a new CustomUser instance with the specified email and password
-    user = CustomUser.objects.create_user(email='testuser@example.com', password='testpassword')
+    user = CustomUser.objects.create_user(
+        email='testuser@example.com', password='testpassword')
     # Create an instance of APIClient
     client = APIClient()
     # Forcefully authenticate the client with the created user
@@ -23,11 +26,15 @@ def authenticated_client():
     return client
 
 # Fixture to create categories and items in the database
+
+
 @pytest.fixture
 def create_categories_and_items():
     # Create two categories
-    category1 = Category.objects.create(name="Appetizers", description="A collection of appetizers.")
-    category2 = Category.objects.create(name="Appetizers2", description="A collection of appetizers.")
+    category1 = Category.objects.create(
+        name="Appetizers", description="A collection of appetizers.")
+    category2 = Category.objects.create(
+        name="Appetizers2", description="A collection of appetizers.")
 
     # Create two items belonging to the respective categories
     appetizer1 = Item.objects.create(
@@ -47,6 +54,8 @@ def create_categories_and_items():
     )
 
 # Mark the test class to use the Django database and ignore deprecation warnings
+
+
 @pytest.mark.filterwarnings("ignore::DeprecationWarning")
 @pytest.mark.django_db
 class TestRestaurantAPIItems:
@@ -71,7 +80,8 @@ class TestRestaurantAPIItems:
         url = '/restaurant/api/items/category/1/'
         response = authenticated_client.get(url)
         assert response.status_code == 200
-        assert len(response.json()) == 1  # There should be one item in the response
+        # There should be one item in the response
+        assert len(response.json()) == 1
         assert response.json()[0]['name'] == 'Bruschetta'
 
     # Test to get items by category where no items are found
@@ -90,15 +100,14 @@ class TestRestaurantAPIItems:
                                     'price': '9.99', 'description': 'Tomatoes, fresh mozzarella, and basil drizzled with balsamic glaze.'}]
 
 
-
-
-
 @pytest.fixture
 def create_orders():
     # Create a test order and related items
 
-    category1 = Category.objects.create(name="Appetizers", description="A collection of appetizers.")
-    category2 = Category.objects.create(name="Appetizers2", description="A collection of appetizers.")
+    category1 = Category.objects.create(
+        name="Appetizers", description="A collection of appetizers.")
+    category2 = Category.objects.create(
+        name="Appetizers2", description="A collection of appetizers.")
 
     # Create two items belonging to the respective categories
     item1 = Item.objects.create(
@@ -127,6 +136,7 @@ def create_orders():
     OrderItem.objects.create(order=order, item=item1, quantity=1)
     OrderItem.objects.create(order=order, item=item2, quantity=2)
 
+
 @pytest.fixture
 def order_request_data():
     return {
@@ -143,6 +153,7 @@ def order_request_data():
         ]
     }
 
+
 @pytest.mark.django_db
 class TestRestaurantOrders:
 
@@ -152,7 +163,7 @@ class TestRestaurantOrders:
         response = authenticated_client.get(url)
         assert response.status_code == status.HTTP_200_OK
         assert response['content-type'] == 'application/json'
-    
+
         # Test to check if unauthenticated users are denied access to the items API
     def test_orders_unauthenticated(self):
         client = APIClient()
@@ -160,28 +171,27 @@ class TestRestaurantOrders:
         response = client.get(url)
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
         assert response['content-type'] == 'application/json'
-    
+
     # Test to get items by category for authenticated users
     def test_get_orders_by_category_with_auth(self, authenticated_client, create_orders):
         url = 'http://localhost:8000/restaurant/api/orders/'
         response = authenticated_client.get(url)
         assert response.status_code == 200
-        assert len(response.json()) == 1  # There should be one item in the response
+        # There should be one item in the response
+        assert len(response.json()) == 1
         print(response.json())
         assert response.json()[0]['user'] == 'John'
         assert response.json()[0]['status'] == 'PENDING'
         assert response.json()[0]['items'] == [{'name': 'Bruschetta', 'quantity': 1}, {
             'name': 'Caprese Salad', 'quantity': 2}]
-    
 
-
-    
     def test_create_order(self, authenticated_client, order_request_data, create_orders):
         # Assuming you have a URL name for the order creation API
         url = "/restaurant/api/orders/create/"
 
         # Perform a POST request to create the order with the request data from the fixture
-        response = authenticated_client.post(url, data=order_request_data, format='json')
+        response = authenticated_client.post(
+            url, data=order_request_data, format='json')
 
         # Assert the status code
         assert response.status_code == status.HTTP_201_CREATED
@@ -191,7 +201,6 @@ class TestRestaurantOrders:
         # Assert the response data
         assert response.data == {'order_id': 2, 'user': 'Pravallika', 'status': 'PENDING', 'items': [
             {'name': 'Bruschetta', 'quantity': 2}, {'name': 'Caprese Salad', 'quantity': 1}]}
-        
 
     def test_update_order(self, authenticated_client, create_orders):
         # Assuming you have a URL name for the order creation API
@@ -207,7 +216,8 @@ class TestRestaurantOrders:
         }
 
         # Perform a POST request to create the order with the request data from the fixture
-        response = authenticated_client.post(url, data=order_request_data, format='json')
+        response = authenticated_client.post(
+            url, data=order_request_data, format='json')
 
         # Assert the status code
         assert response.status_code == status.HTTP_200_OK
