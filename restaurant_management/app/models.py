@@ -1,4 +1,6 @@
 from django.db import models
+
+#ISSUE: Design the data models and relationships #12
 # Define a model for Category
 class Category(models.Model):
     unique_id = models.AutoField(primary_key=True)  # Auto-incrementing primary key

@@ -10,6 +10,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.decorators import action
 
+
+# ISSUE Add Search Functionality for Menu Items #22
 # Apply the 'IsAuthenticated' permission class to the following views
 @permission_classes([IsAuthenticated])
 class ItemListView(generics.ListAPIView):
@@ -33,6 +35,7 @@ class ItemListView(generics.ListAPIView):
 
         return queryset
 
+# ISSUE API endpoints for Placing an order #21
 @permission_classes([IsAuthenticated])
 class OrderCreateAPIView(APIView):
     # Handle POST requests to create an order
@@ -61,6 +64,7 @@ class OrderCreateAPIView(APIView):
         # If data is invalid, return errors with 400 status code
         return Response(serializer.errors, status=400)
 
+#ISSUE 14 API endpoints for Tracking order status #14
 @permission_classes([IsAuthenticated])
 class ListOrdersAPIView(generics.ListAPIView):
     # Display a list of all orders
@@ -73,6 +77,8 @@ from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 from .models import Order, OrderItem, Item
 
+
+# ISSUE API endpoints for Adding items to the order #20
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def add_or_update_order_item(request, order_id):
@@ -101,6 +107,8 @@ def add_or_update_order_item(request, order_id):
 
     return Response({'message': 'Items added/updated successfully'}, status=200)
 
+
+# ISSUE API endpoints for Customer registration #29
 # Define a viewset for Customer model
 class CustomerViewSet(viewsets.ModelViewSet):
     # Display a list of all customers and allow CRUD operations
