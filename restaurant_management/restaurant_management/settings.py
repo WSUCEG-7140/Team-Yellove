@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'authentication'
 ]
 
+
+# Implement login and token generation #19
+# above djoser app
 AUTH_USER_MODEL = 'authentication.CustomUser'
 
 REST_FRAMEWORK = {

@@ -8,6 +8,7 @@ import datetime
 import warnings
 import requests
 
+#ISSUE Write unit tests for each API endpoint #30
 
 # Add this line to ignore the DeprecationWarning
 warnings.filterwarnings("ignore", category=DeprecationWarning)
