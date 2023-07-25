@@ -7,8 +7,16 @@ name = "pypi"
 django = "*"
 mysql-connector-python = "*"
 djangorestframework = "*"
+django-filter = "*"
+djangorestframework-jwt = "*"
+djangorestframework-simplejwt = "*"
+djoser = "*"
+social-auth-app-django = "*"
+tzdata = "*"
 
 [dev-packages]
+pytest = "*"
+pytest-django = "*"
 
 [requires]
 python_version = "3.10"

@@ -1,0 +1,13 @@
+django
+djangorestframework
+django-filter
+djangorestframework-jwt
+djangorestframework-simplejwt
+djoser
+social-auth-app-django
+tzdata
+
+# Development packages
+pytest
+pytest-django
+
