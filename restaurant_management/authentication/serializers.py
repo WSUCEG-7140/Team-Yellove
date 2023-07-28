@@ -1,4 +1,5 @@
 from rest_framework import serializers
+# for serializers : https://www.django-rest-framework.org/api-guide/serializers/
 from .models import CustomUser
 
 class UserSerializer(serializers.ModelSerializer):

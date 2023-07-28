@@ -1,4 +1,5 @@
 from django.db import models
+# for Models: https://docs.djangoproject.com/en/4.2/topics/db/models/
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 # ISSUE: Design the data models and relationships #12

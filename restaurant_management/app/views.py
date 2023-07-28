@@ -1,5 +1,5 @@
 # Import necessary modules
-from rest_framework import generics
+from rest_framework import generics  #FOr generics: https://docs.djangoproject.com/en/4.2/topics/class-based-views/generic-display/
 from .models import Item, Order, OrderItem, Customer
 from .serializers import ItemSerializer, CreateOrderSerializer, ViewOrderSerializer, UpdateItemSerializer, CustomerSerializer
 from rest_framework.response import Response
@@ -9,7 +9,7 @@ from django.db.models import Q
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.decorators import action
-
+# FOr rest+framework: https://www.django-rest-framework.org/
 
 # ISSUE Add Search Functionality for Menu Items #22
 # Apply the 'IsAuthenticated' permission class to the following views

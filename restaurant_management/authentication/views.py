@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from .serializers import UserSerializer
 from .models import CustomUser
 from rest_framework_simplejwt.tokens import RefreshToken
+#for rest_framework: https://www.django-rest-framework.org/
 
 # ISSUE 16 Implement user registration functionality
 

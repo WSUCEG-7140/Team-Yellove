@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from ..models import Order, OrderItem, Item
+#For Serializer : #https://www.django-rest-framework.org/api-guide/serializers/
 
 # Serializer for the 'Item' model when creating an order
 class CreateItemSerializer(serializers.Serializer):

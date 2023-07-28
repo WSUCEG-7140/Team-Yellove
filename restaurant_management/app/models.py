@@ -1,8 +1,10 @@
 from django.db import models
+# Django Models: https://docs.djangoproject.com/en/4.2/topics/db/models/
 
 #ISSUE: Design the data models and relationships #12
 # Define a model for Category
-class Category(models.Model):
+
+class Category(models.Model):  
     unique_id = models.AutoField(primary_key=True)  # Auto-incrementing primary key
     name = models.CharField(max_length=100)  # Field to store the category name (max length: 100 characters)
     description = models.TextField()  # Field to store the category description (text field)
@@ -13,7 +15,7 @@ class Item(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)  # Foreign key to Category model, on deletion cascade
     name = models.CharField(max_length=100)  # Field to store the item name (max length: 100 characters)
     description = models.TextField()  # Field to store the item description (text field)
-    price = models.DecimalField(max_digits=10, decimal_places=2)  # Field to store the item price (decimal field)
+    price = models.DecimalField(max_digits=10, decimal_places=2)  # Field to store the item price (decimal field) in $.
 
 # Define a model for Ingredient
 class Ingredient(models.Model):
