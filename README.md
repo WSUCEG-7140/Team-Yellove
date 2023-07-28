@@ -11,8 +11,8 @@
 
 Before running these commands, ensure that you have Git and Docker (with Docker Compose) installed on your system. Additionally, navigate to the correct directory (the one containing the `docker-compose.yml` file) before executing the `docker-compose up` command.
 
-#Main code
-The main code will be in views.py,models.py and serializer folder. We need to check all the folders which are having these names for the code.
+# Main code
+## The main code will be in views.py,models.py and serializer folder. We need to check all the folders which are having these names for the code.
 
 
 # API Documentation
