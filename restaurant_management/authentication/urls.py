@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path   # for urls: https://docs.djangoproject.com/en/4.2/ref/urls/
 from authentication.views import create_user, get_user_list
 
 urlpatterns = [

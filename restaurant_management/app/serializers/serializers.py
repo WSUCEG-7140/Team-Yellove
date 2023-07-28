@@ -1,9 +1,10 @@
 # Import necessary modules
 from rest_framework import serializers
 from ..models import Item, Category, Order, OrderItem, Customer
+#For Serializer : https://www.django-rest-framework.org/api-guide/serializers/
 
 # Serializer for Category model
-class CategorySerializer(serializers.ModelSerializer):
+class CategorySerializer(serializers.ModelSerializer):  
     class Meta:
         model = Category  # Define the model to be serialized
         fields = ('unique_id', 'name', 'description')  # Specify the fields to include in the serialized representation

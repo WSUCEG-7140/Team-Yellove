@@ -4,6 +4,7 @@ from .views import ItemListView
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import OrderCreateAPIView, ListOrdersAPIView, add_or_update_order_item, CustomerViewSet
+# for rest_framework https://www.django-rest-framework.org/
 
 router = DefaultRouter()
 router.register(r'customers', CustomerViewSet)
