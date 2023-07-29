@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['model_0',['model',['../classapp_1_1orders__serializers_1_1_update_item_serializer_1_1_meta.html#a56ec4684d7d33ffc7015a1455bc742e8',1,'app.orders_serializers.UpdateItemSerializer.Meta.model'],['../classapp_1_1orders__serializers_1_1_view_order_serializer_1_1_meta.html#a72fbb7ca6ce2ccad1c33b80ca0c74992',1,'app.orders_serializers.ViewOrderSerializer.Meta.model'],['../classapp_1_1serializers_1_1_category_serializer_1_1_meta.html#a5520ef76e3c77b8cae62e6ff284c9452',1,'app.serializers.CategorySerializer.Meta.model'],['../classapp_1_1serializers_1_1_item_serializer_1_1_meta.html#afe87bd655928e138495b9ae7802c743a',1,'app.serializers.ItemSerializer.Meta.model'],['../classapp_1_1serializers_1_1_customer_serializer_1_1_meta.html#ad501e95b32d15ced942212f6d47990f3',1,'app.serializers.CustomerSerializer.Meta.model']]]
+];

@@ -1,0 +1,85 @@
+\doxysection{app.\+models.\+Order Class Reference}
+\hypertarget{classapp_1_1models_1_1_order}{}\label{classapp_1_1models_1_1_order}\index{app.models.Order@{app.models.Order}}
+Inheritance diagram for app.\+models.\+Order\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classapp_1_1models_1_1_order}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classapp_1_1models_1_1_order_ad62c7a78cd88bef24bf5ce484a4416e0}{STATUS\+\_\+\+CHOICES}}
+\item 
+\mbox{\hyperlink{classapp_1_1models_1_1_order_a320e35ae5b2379ad65c2a60ae1b8373f}{unique\+\_\+id}} = models.\+Auto\+Field(primary\+\_\+key=True)
+\item 
+\mbox{\hyperlink{classapp_1_1models_1_1_order_a885c9a520150b65b58d200de92f36d4c}{user}} = models.\+Char\+Field(max\+\_\+length=20, null=False)
+\item 
+\mbox{\hyperlink{classapp_1_1models_1_1_order_ab17cb1f7223bd4fccc67e1aaddff6bb1}{status}} = models.\+Char\+Field(max\+\_\+length=20, choices=\mbox{\hyperlink{classapp_1_1models_1_1_order_ad62c7a78cd88bef24bf5ce484a4416e0}{STATUS\+\_\+\+CHOICES}}, default=\textquotesingle{}PENDING\textquotesingle{})
+\item 
+\mbox{\hyperlink{classapp_1_1models_1_1_order_aa97d70ab99c53b1927c03c56e399466b}{items}} = models.\+Many\+To\+Many\+Field(\mbox{\hyperlink{classapp_1_1models_1_1_item}{Item}}, through=\textquotesingle{}\mbox{\hyperlink{classapp_1_1models_1_1_order_item}{Order\+Item}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classapp_1_1models_1_1_order_a61eb80730b3b7bf129cb48fe2e2c6895}{created\+\_\+at}} = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)
+\item 
+\mbox{\hyperlink{classapp_1_1models_1_1_order_a39c89925cef56dc198cbb9f40757be82}{updated\+\_\+at}} = models.\+Date\+Time\+Field(auto\+\_\+now=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classapp_1_1models_1_1_order_a61eb80730b3b7bf129cb48fe2e2c6895}\label{classapp_1_1models_1_1_order_a61eb80730b3b7bf129cb48fe2e2c6895} 
+\index{app.models.Order@{app.models.Order}!created\_at@{created\_at}}
+\index{created\_at@{created\_at}!app.models.Order@{app.models.Order}}
+\doxysubsubsection{\texorpdfstring{created\_at}{created\_at}}
+{\footnotesize\ttfamily app.\+models.\+Order.\+created\+\_\+at = models.\+Date\+Time\+Field(auto\+\_\+now\+\_\+add=True)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1models_1_1_order_aa97d70ab99c53b1927c03c56e399466b}\label{classapp_1_1models_1_1_order_aa97d70ab99c53b1927c03c56e399466b} 
+\index{app.models.Order@{app.models.Order}!items@{items}}
+\index{items@{items}!app.models.Order@{app.models.Order}}
+\doxysubsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily app.\+models.\+Order.\+items = models.\+Many\+To\+Many\+Field(\mbox{\hyperlink{classapp_1_1models_1_1_item}{Item}}, through=\textquotesingle{}\mbox{\hyperlink{classapp_1_1models_1_1_order_item}{Order\+Item}}\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1models_1_1_order_ab17cb1f7223bd4fccc67e1aaddff6bb1}\label{classapp_1_1models_1_1_order_ab17cb1f7223bd4fccc67e1aaddff6bb1} 
+\index{app.models.Order@{app.models.Order}!status@{status}}
+\index{status@{status}!app.models.Order@{app.models.Order}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily app.\+models.\+Order.\+status = models.\+Char\+Field(max\+\_\+length=20, choices=\mbox{\hyperlink{classapp_1_1models_1_1_order_ad62c7a78cd88bef24bf5ce484a4416e0}{STATUS\+\_\+\+CHOICES}}, default=\textquotesingle{}PENDING\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1models_1_1_order_ad62c7a78cd88bef24bf5ce484a4416e0}\label{classapp_1_1models_1_1_order_ad62c7a78cd88bef24bf5ce484a4416e0} 
+\index{app.models.Order@{app.models.Order}!STATUS\_CHOICES@{STATUS\_CHOICES}}
+\index{STATUS\_CHOICES@{STATUS\_CHOICES}!app.models.Order@{app.models.Order}}
+\doxysubsubsection{\texorpdfstring{STATUS\_CHOICES}{STATUS\_CHOICES}}
+{\footnotesize\ttfamily tuple app.\+models.\+Order.\+STATUS\+\_\+\+CHOICES\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'PENDING'},\ \textcolor{stringliteral}{'Pending'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'PROCESSING'},\ \textcolor{stringliteral}{'Processing'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'COMPLETED'},\ \textcolor{stringliteral}{'Completed'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'CANCELLED'},\ \textcolor{stringliteral}{'Cancelled'}),}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classapp_1_1models_1_1_order_a320e35ae5b2379ad65c2a60ae1b8373f}\label{classapp_1_1models_1_1_order_a320e35ae5b2379ad65c2a60ae1b8373f} 
+\index{app.models.Order@{app.models.Order}!unique\_id@{unique\_id}}
+\index{unique\_id@{unique\_id}!app.models.Order@{app.models.Order}}
+\doxysubsubsection{\texorpdfstring{unique\_id}{unique\_id}}
+{\footnotesize\ttfamily app.\+models.\+Order.\+unique\+\_\+id = models.\+Auto\+Field(primary\+\_\+key=True)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1models_1_1_order_a39c89925cef56dc198cbb9f40757be82}\label{classapp_1_1models_1_1_order_a39c89925cef56dc198cbb9f40757be82} 
+\index{app.models.Order@{app.models.Order}!updated\_at@{updated\_at}}
+\index{updated\_at@{updated\_at}!app.models.Order@{app.models.Order}}
+\doxysubsubsection{\texorpdfstring{updated\_at}{updated\_at}}
+{\footnotesize\ttfamily app.\+models.\+Order.\+updated\+\_\+at = models.\+Date\+Time\+Field(auto\+\_\+now=True)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1models_1_1_order_a885c9a520150b65b58d200de92f36d4c}\label{classapp_1_1models_1_1_order_a885c9a520150b65b58d200de92f36d4c} 
+\index{app.models.Order@{app.models.Order}!user@{user}}
+\index{user@{user}!app.models.Order@{app.models.Order}}
+\doxysubsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily app.\+models.\+Order.\+user = models.\+Char\+Field(max\+\_\+length=20, null=False)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{models_8py}{models.\+py}}\end{DoxyCompactItemize}
