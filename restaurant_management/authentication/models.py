@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 # ISSUE: Design the data models and relationships #12
+""" @ref R12_0"""
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
