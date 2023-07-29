@@ -12,6 +12,7 @@ from rest_framework.decorators import action
 # FOr rest+framework: https://www.django-rest-framework.org/
 
 # ISSUE Add Search Functionality for Menu Items #22
+""" @ref R22_0"""
 # Apply the 'IsAuthenticated' permission class to the following views
 @permission_classes([IsAuthenticated])
 class ItemListView(generics.ListAPIView):
@@ -36,6 +37,7 @@ class ItemListView(generics.ListAPIView):
         return queryset
 
 # ISSUE API endpoints for Placing an order #21
+""" @ref R21_0"""
 @permission_classes([IsAuthenticated])
 class OrderCreateAPIView(APIView):
     # Handle POST requests to create an order
@@ -65,6 +67,7 @@ class OrderCreateAPIView(APIView):
         return Response(serializer.errors, status=400)
 
 #ISSUE 14 API endpoints for Tracking order status #14
+""" @ref R14_0"""
 @permission_classes([IsAuthenticated])
 class ListOrdersAPIView(generics.ListAPIView):
     # Display a list of all orders
@@ -79,6 +82,7 @@ from .models import Order, OrderItem, Item
 
 
 # ISSUE API endpoints for Adding items to the order #20
+""" @ref R20_0"""
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def add_or_update_order_item(request, order_id):
@@ -107,7 +111,7 @@ def add_or_update_order_item(request, order_id):
 
     return Response({'message': 'Items added/updated successfully'}, status=200)
 
-
+""" @ref R29_0"""
 # ISSUE API endpoints for Customer registration #29
 # Define a viewset for Customer model
 class CustomerViewSet(viewsets.ModelViewSet):
