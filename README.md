@@ -14,18 +14,6 @@ Before running these commands, ensure that you have Git and Docker (with Docker 
 # Main code:
 ## The main code will be in views.py,models.py and serializer folder. We need to check all the folders which are having these names for the code.
 
-# Embedaded Design Document: 
-Liks to show the design of the code.
-
-1)file:///C:/Users/sruth/Desktop/assignment/new/Team-Yellove/restaurant_management/Doc/html/views_8py.html
-
-2)file:///C:/Users/sruth/Desktop/assignment/new/Team-Yellove/restaurant_management/Doc/html/models_8py.html
-
-3)file:///C:/Users/sruth/Desktop/assignment/new/Team-Yellove/restaurant_management/Doc/html/serializers_8py.html
-
-4)file:///C:/Users/sruth/Desktop/assignment/new/Team-Yellove/restaurant_management/Doc/html/orders__serializers_8py.html
-
-5)file:///C:/Users/sruth/Desktop/assignment/new/Team-Yellove/restaurant_management/Doc/html/urls_8py.html
 
 # API Documentation
 
