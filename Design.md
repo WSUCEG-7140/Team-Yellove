@@ -21,11 +21,11 @@ Restaurant Management System developed using Django Framework and Python.
 
 The Project consists of the following components:
 
-@anchor R6_0 https://github.com/WSUCEG-7140/Team-Yellove/issues/16<br>
-@anchor R6_0 https://github.com/WSUCEG-7140/Team-Yellove/issues/19<br>
-@anchor R6_0 https://github.com/WSUCEG-7140/Team-Yellove/issues/20<br>
-@anchor R6_0 https://github.com/WSUCEG-7140/Team-Yellove/issues/22<br>
-@anchor R6_0 https://github.com/WSUCEG-7140/Team-Yellove/issues/21<br>
-@anchor R6_0 https://github.com/WSUCEG-7140/Team-Yellove/issues/14<br>
-@anchor R6_0 https://github.com/WSUCEG-7140/Team-Yellove/issues/13<br>
+@anchor  https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/app/views.py<br>
+@anchor  https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/app/models.py<br>
+@anchor  https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/app/serializers/orders_serializers.py<br>
+@anchor  https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/app/serializers/serializers.py<br>
+@anchor  https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/authentication/views.py<br>
+@anchor  https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/authentication/models.py<br>
+@anchor  https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/authentication/serializers.py<br>
 
