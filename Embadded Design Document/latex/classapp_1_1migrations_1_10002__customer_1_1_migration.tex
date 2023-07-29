@@ -1,0 +1,72 @@
+\doxysection{app.\+migrations.0002\+\_\+customer.\+Migration Class Reference}
+\hypertarget{classapp_1_1migrations_1_10002__customer_1_1_migration}{}\label{classapp_1_1migrations_1_10002__customer_1_1_migration}\index{app.migrations.0002\_customer.Migration@{app.migrations.0002\_customer.Migration}}
+Inheritance diagram for app.\+migrations.0002\+\_\+customer.\+Migration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classapp_1_1migrations_1_10002__customer_1_1_migration}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classapp_1_1migrations_1_10002__customer_1_1_migration_a22e9002afbf6c1f4e8bc249c9c6cfac6}{dependencies}}
+\item 
+list \mbox{\hyperlink{classapp_1_1migrations_1_10002__customer_1_1_migration_a26060eae5ac04ca2a34131b8782c4861}{operations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classapp_1_1migrations_1_10002__customer_1_1_migration_a22e9002afbf6c1f4e8bc249c9c6cfac6}\label{classapp_1_1migrations_1_10002__customer_1_1_migration_a22e9002afbf6c1f4e8bc249c9c6cfac6} 
+\index{app.migrations.0002\_customer.Migration@{app.migrations.0002\_customer.Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!app.migrations.0002\_customer.Migration@{app.migrations.0002\_customer.Migration}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list app.\+migrations.\+0002\+\_\+customer.\+Migration.\+dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}app"{}},\ \textcolor{stringliteral}{"{}0001\_initial"{}}),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classapp_1_1migrations_1_10002__customer_1_1_migration_a26060eae5ac04ca2a34131b8782c4861}\label{classapp_1_1migrations_1_10002__customer_1_1_migration_a26060eae5ac04ca2a34131b8782c4861} 
+\index{app.migrations.0002\_customer.Migration@{app.migrations.0002\_customer.Migration}!operations@{operations}}
+\index{operations@{operations}!app.migrations.0002\_customer.Migration@{app.migrations.0002\_customer.Migration}}
+\doxysubsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list app.\+migrations.\+0002\+\_\+customer.\+Migration.\+operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ migrations.CreateModel(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ name=\textcolor{stringliteral}{"{}Customer"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ fields=[}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}id"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ models.BigAutoField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ auto\_created=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ primary\_key=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ serialize=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ verbose\_name=\textcolor{stringliteral}{"{}ID"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}first\_name"{}},\ models.CharField(max\_length=100)),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}last\_name"{}},\ models.CharField(max\_length=100)),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}email"{}},\ models.EmailField(max\_length=254)),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}phone\_number"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ models.CharField(blank=\textcolor{keyword}{True},\ max\_length=15,\ null=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}address"{}},\ models.TextField(blank=\textcolor{keyword}{True},\ null=\textcolor{keyword}{True})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}date\_of\_birth"{}},\ models.DateField(blank=\textcolor{keyword}{True},\ null=\textcolor{keyword}{True})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}created\_at"{}},\ models.DateTimeField(auto\_now\_add=\textcolor{keyword}{True})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/sruth/\+Desktop/assignment/\+Project/\+Team-\/\+Yellove/restaurant\+\_\+management/app/migrations/\mbox{\hyperlink{0002__customer_8py}{0002\+\_\+customer.\+py}}\end{DoxyCompactItemize}
