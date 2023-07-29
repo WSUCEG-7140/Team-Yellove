@@ -14,6 +14,27 @@ Before running these commands, ensure that you have Git and Docker (with Docker 
 # Main code:
 ## The main code will be in views.py,models.py and serializer folder. We need to check all the folders which are having these names for the code.
 
+# Programming By Contract and Literate Programming
+
+We have covered Programming By Contract and Literate Programming in below files:
+
+https://github.com/WSUCEG-7140/Team-Yellove/blob/main/Design.md  (Project Design)
+
+https://github.com/WSUCEG-7140/Team-Yellove/blob/main/requirements.md  (linked Issues)
+
+https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/app/views.py
+
+https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/app/models.py
+
+https://github.com/WSUCEG-7140/Team-Yellove/blob/main/restaurant_management/app/serializers/serializers.py
+
+https://github.com/WSUCEG-7140/Team-Yellove/blob/main/dummydata.sql
+
+# Test Coverage Report and Doxygen Documentation
+
+Test Coverage report and the doxygen documentation are available at the below link; Click the link & scroll down to locate them. 
+
+https://github.com/WSUCEG-7140/Team-Yellove/tree/main/Embedded%20Design%20Document
 
 # API Documentation
 
