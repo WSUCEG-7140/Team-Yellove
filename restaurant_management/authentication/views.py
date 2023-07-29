@@ -8,6 +8,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 #for rest_framework: https://www.django-rest-framework.org/
 
 # ISSUE 16 Implement user registration functionality
+""" @ref R16_0"""
 
 # API view for user registration
 @api_view(['POST'])
