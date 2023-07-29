@@ -1,0 +1,71 @@
+\doxysection{authentication.\+migrations.0001\+\_\+initial.\+Migration Class Reference}
+\hypertarget{classauthentication_1_1migrations_1_10001__initial_1_1_migration}{}\label{classauthentication_1_1migrations_1_10001__initial_1_1_migration}\index{authentication.migrations.0001\_initial.Migration@{authentication.migrations.0001\_initial.Migration}}
+Inheritance diagram for authentication.\+migrations.0001\+\_\+initial.\+Migration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classauthentication_1_1migrations_1_10001__initial_1_1_migration}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classauthentication_1_1migrations_1_10001__initial_1_1_migration_a709796bff20e09f4c1ce0655c8ff4571}{initial}} = True
+\item 
+list \mbox{\hyperlink{classauthentication_1_1migrations_1_10001__initial_1_1_migration_a2653bffdceb305c86caf1ca803651080}{dependencies}}
+\item 
+list \mbox{\hyperlink{classauthentication_1_1migrations_1_10001__initial_1_1_migration_afe8992348694266a47ac61ad29bc0bee}{operations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classauthentication_1_1migrations_1_10001__initial_1_1_migration_a2653bffdceb305c86caf1ca803651080}\label{classauthentication_1_1migrations_1_10001__initial_1_1_migration_a2653bffdceb305c86caf1ca803651080} 
+\index{authentication.migrations.0001\_initial.Migration@{authentication.migrations.0001\_initial.Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!authentication.migrations.0001\_initial.Migration@{authentication.migrations.0001\_initial.Migration}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list authentication.\+migrations.\+0001\+\_\+initial.\+Migration.\+dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classauthentication_1_1migrations_1_10001__initial_1_1_migration_a709796bff20e09f4c1ce0655c8ff4571}\label{classauthentication_1_1migrations_1_10001__initial_1_1_migration_a709796bff20e09f4c1ce0655c8ff4571} 
+\index{authentication.migrations.0001\_initial.Migration@{authentication.migrations.0001\_initial.Migration}!initial@{initial}}
+\index{initial@{initial}!authentication.migrations.0001\_initial.Migration@{authentication.migrations.0001\_initial.Migration}}
+\doxysubsubsection{\texorpdfstring{initial}{initial}}
+{\footnotesize\ttfamily bool authentication.\+migrations.\+0001\+\_\+initial.\+Migration.\+initial = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classauthentication_1_1migrations_1_10001__initial_1_1_migration_afe8992348694266a47ac61ad29bc0bee}\label{classauthentication_1_1migrations_1_10001__initial_1_1_migration_afe8992348694266a47ac61ad29bc0bee} 
+\index{authentication.migrations.0001\_initial.Migration@{authentication.migrations.0001\_initial.Migration}!operations@{operations}}
+\index{operations@{operations}!authentication.migrations.0001\_initial.Migration@{authentication.migrations.0001\_initial.Migration}}
+\doxysubsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list authentication.\+migrations.\+0001\+\_\+initial.\+Migration.\+operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ migrations.CreateModel(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ name=\textcolor{stringliteral}{'CustomUser'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ fields=[}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'id'},\ models.BigAutoField(auto\_created=\textcolor{keyword}{True},\ primary\_key=\textcolor{keyword}{True},\ serialize=\textcolor{keyword}{False},\ verbose\_name=\textcolor{stringliteral}{'ID'})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'password'},\ models.CharField(max\_length=128,\ verbose\_name=\textcolor{stringliteral}{'password'})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'last\_login'},\ models.DateTimeField(blank=\textcolor{keyword}{True},\ null=\textcolor{keyword}{True},\ verbose\_name=\textcolor{stringliteral}{'last\ login'})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'email'},\ models.EmailField(max\_length=254,\ unique=\textcolor{keyword}{True})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'first\_name'},\ models.CharField(max\_length=30)),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'last\_name'},\ models.CharField(max\_length=30)),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'is\_active'},\ models.BooleanField(default=\textcolor{keyword}{True})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'is\_staff'},\ models.BooleanField(default=\textcolor{keyword}{False})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ options=\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'abstract'}:\ \textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/sruth/\+Desktop/assignment/\+Project/\+Team-\/\+Yellove/restaurant\+\_\+management/authentication/migrations/\mbox{\hyperlink{authentication_2migrations_20001__initial_8py}{0001\+\_\+initial.\+py}}\end{DoxyCompactItemize}
