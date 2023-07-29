@@ -1,0 +1,36 @@
+# Meeting Minutes 
+
+## 07 July 2023
+
+## Opening:
+The Meeting was called to order at 7pm on 07 July 2023 via Webex
+
+## Present:
+
+Sruthi Veerepalli
+Manibabu Veerepalli
+Tejaswini Minupala
+Ashish Chidurala
+Pravalika Palakolu
+
+## Absent:
+NA
+
+## Discussion :
+
+we have discussed about the the progress on the following tasks.
+Implementing user registeration funcationality, implement login and token generation, API endpoints to adding items to order, Adding end points to placing an order, Add search functionality for menu items.
+we have made good progress individually as well as colloboratively.
+
+## Decisions Made:
+
+we have decided  to make sure, the endpoint allows to register new users and enable them to authenticate themselves securely ; to allow customers to create, search and modify the orders and facilitating seamless transactions. 
+
+## Additional Notes:
+work on tasks as per the assigned priorities.
+
+## Next Meeting Details:
+Next meeting will be on 14 July 2023 on Webex
+
+## Minutes submitted by:  Manibabu Veerepalli
+

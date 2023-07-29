@@ -1,0 +1,34 @@
+# Meeting Minutes 
+
+## 27 June 2023
+
+## Opening:
+The Meeting was called to order at 1 P.M on June 27, 2023, via Webex
+
+## Present:
+
+Sruthi Veerepalli
+Manibabu Veerepalli
+Tejaswini Minupala
+Ashish Chidurala
+Pravalika Palakolu
+
+## Absent:
+NA
+
+## Discussion (with all the team members)
+ we have set up this standup meeting to review our setbacks from sprint1 submission. 
+As we were done with only the design and implementation of the code by the time of sprint 1 evaluation,  we have discussed to focus on commits and comments associated with it. 
+To work on pull requests and review of the pull requests by each of the team member other than the contributor of the pull request.
+## Decisions Made:
+To work on the code as well as to make sure to adhere to the specifications given in the rubrics to follow the process and contribute to the project.
+
+## Additional Notes:
+work on tasks as assigned and as per priority.
+
+## Next Meeting Details:
+Next meeting will be on 29 june 2023 on Webex
+
+## Minutes submitted by:  Ashish Chidurala
+
+

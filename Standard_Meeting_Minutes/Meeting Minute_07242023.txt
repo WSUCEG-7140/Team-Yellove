@@ -1,0 +1,30 @@
+# Meeting Minutes 
+
+## 24 July 2023
+
+## Opening:
+The Meeting was called to order on 24 July  2023 - Webex
+
+## Present:
+
+Sruthi Veerepalli
+Manibabu Veerepalli
+Tejaswini Minupala
+Ashish Chidurala
+Pravalika Palakolu
+
+## Absent:
+NA
+
+## Discussion 
+
+We see the implementation of the code and integrating it with git is going fine. We had all the test cases run successfully. we have discussed about documenting the code. 
+
+## Decisions Made:
+
+During the meeting, the team made the following decisions:
+
+We will make sure to compare our work with rubrics points. We will review the important components like pull requests, commits and pull requests review, comments for the code, issue resolution.
+
+## Minutes submitted by:  Tejaswini Minupala
+

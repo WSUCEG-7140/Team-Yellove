@@ -1,0 +1,33 @@
+# Meeting Minutes 
+
+## 14 June 2023
+
+## Opening:
+The Meeting was called to order at 4pm on June 14, 2023, via Webex
+
+## Present:
+
+Sruthi Veerepalli
+Manibabu Veerepalli
+Tejaswini Minupala
+Ashish Chidurala
+Pravalika Palakolu
+
+## Absent:
+NA
+
+## Discussion :
+
+We have connected to dicscuss the process and flow of our team project. We discussed about our knowledge on working with the git. We also made sure to create our individual accounts with the git and joining the the organisation creeated by the professor. We tried to understand sprint planing and creation of tasks etc.,
+
+## Decisions Made:
+
+we made the following decisions during the meeting.
+
+To check out and grab a good grip of working with git and learn about commits, pull requests, assigning the tasks, prioritizing them., etc as requied for the project process.
+
+## Next Meeting Details:
+Next meeting will be on 27 June 2023 on Webex
+
+## Minutes submitted by:  Ashish Chidurala
+

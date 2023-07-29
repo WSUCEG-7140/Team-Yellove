@@ -1,0 +1,50 @@
+# Meeting Minutes 
+
+## 29 June 2023
+
+## Opening:
+The Meeting was called to order 11 A.M on June 29, 2023 via Webex
+
+## Present:
+Sruthi Veerepalli
+Manibabu Veerepalli
+Tejaswini Minupala
+Ashish Chidurala
+Pravalika Palakolu
+## Absent:
+NA
+
+## Progress reporting (Each team member shared their progress):
+Sruthi Veerepalli:
+Worked on my task :
+to create a new repository for the project on GitHub and  initialized it by creating and adding a README file. 
+creation of various API endpoints is currently underway and create a Django endpoint that is an essential API component. 
+Creating various API endpoints .The necessary tables in the database are created, and dependencies for the required tables are established primary and foreign keysetc.,
+
+Manibabu Veerepalli:
+Coloborated to set up the development envireonment. Django Framework (v4.2.2)
+mysql-connector-python (v8.0.33)
+Postman (for API testing)
+Python 3.10
+Creating various API endpoints . and worked the necessary tables in the database and dependencies for the required tables are established primary and foreign keysetc.,
+
+Tejaswini Minupala:
+Coloborated to set up the development envireonment. Creating various API endpoints and created tables in the database.
+Defining the necessary fields and relationships in the Django models to accurately represent orders and their statuses.
+worked on implementing Views: Creating views in Django that will handle the logic for retrieving and updating order statuses.
+
+Ashish Chidurala: 
+Creating various API endpoints .
+we have Set up a MySQL v8.0 database server and MySQL Workbench tool. The necessary tables in the database are created, and dependencies for the required tables are established primary and foreign keys etc.,
+
+Pravalika Palakolu:  
+Creating various API endpoints .These include the implementation of functionalities such as viewing the menu etc. 
+we have Set up a MySQL v8.0 database server and MySQL Workbench tool.
+I have collaborated to create the essential tables in the database are established dependencies such as primary and foreign keys etc.,
+## Decisions Made during the meeting:
+To make sure to follow the steps mentioned in the rubrics section of process and contribution and focus on sucessful commits in the following sprint.
+
+## Next Meeting Details:
+Next meeting will be on 07 June 2023 on Webex.
+
+## Minutes submitted by:  Shruthi Veerepalli.
