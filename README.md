@@ -32,7 +32,7 @@ https://github.com/WSUCEG-7140/Team-Yellove/blob/main/dummydata.sql
 
 # Doxygen Document
 
-https://github.com/WSUCEG-7140/Team-Yellove/tree/main/Embedded%20Design%20Document
+
 
 # Testing 
 https://github.com/WSUCEG-7140/Team-Yellove/actions/runs/5698321910
